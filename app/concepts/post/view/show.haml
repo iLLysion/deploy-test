@@ -1,0 +1,16 @@
+.new
+  %h2
+    = model.title
+  .row
+    .col-sm-12
+      = model.description
+  .row
+    .col-sm-12{style: 'font-style: italic;'}
+      = model.created_at
+  .row
+    .col-sm-1
+      =link_to 'Edit', edit_post_path(model.id)
+    .col-sm-1
+      =link_to 'Delete', post_path(model.id), data: { method: :delete, confirm: 'Are you sure?' }
+    .col-sm-2
+      =link_to 'Post List', posts_path

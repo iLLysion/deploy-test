@@ -1,0 +1,14 @@
+.new
+  %h1 Edit Post
+  = simple_form_for(@model, method: :patch) do |f|
+    .row
+      .col-sm-12
+        = f.input :title, placeholder: "Title", label: false
+    .row
+      .col-sm-12
+        = f.input :description, placeholder: "Post text", label: false, as: :text
+    .row
+      .col-sm-1
+        = link_to 'Cancel', post_path(f.object.id)
+      .col-sm-1
+        = f.submit 'Update'

@@ -1,0 +1,18 @@
+= link_to 'Create Post', new_post_path
+.new
+  - model.each do |r|
+    %h2
+      = r.title
+    .row
+      .col-sm-12
+        = r.description
+    .row
+      .col-sm-12{style: 'font-style: italic;'}
+        = r.created_at
+    .row
+      .col-sm-1
+        =link_to 'Show', post_path(r.id)
+      .col-sm-1
+        =link_to 'Edit', edit_post_path(r.id)
+      .col-sm-1
+        =link_to 'Delete', post_path(r.id), data: { method: :delete, confirm: 'Are you sure?' }

@@ -1,0 +1,14 @@
+.new
+  %h1 New Post
+  = simple_form_for(@model, html: { class: 'form-horizontal' }) do |f|
+    .row
+      .col-sm-12
+        = f.input :title, placeholder: "Title", label: false
+    .row
+      .col-sm-12
+        = f.input :description, placeholder: "Post text", label: false, as: :text
+    .row
+      .col-sm-1
+        = link_to 'Cancel', posts_path
+      .col-sm-1
+        = f.submit 'Create Post'
