@@ -6,7 +6,7 @@
 
 erver '178.128.242.108', roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'https://github.com/iLLysion/deploy-test.git'
+set :repo_url,        'git@github.com:iLLysion/deploy-test.git'
 set :application,     'deploy-test'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
