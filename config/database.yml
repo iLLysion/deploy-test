@@ -27,6 +27,9 @@ default: &default
 development:
   <<: *default
   database: deploy_test_development
+  username: deploy_test
+  password: deploy_test_12345
+  host: localhost
 
 test:
   <<: *default
