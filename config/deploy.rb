@@ -4,7 +4,7 @@
 # set :application, "my_app_name"
 # set :repo_url, "git@example.com:me/my_repo.git"
 
-erver '178.128.242.108', roles: [:web, :app, :db], primary: true
+server '178.128.242.108', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:iLLysion/deploy-test.git'
 set :application,     'deploy-test'
