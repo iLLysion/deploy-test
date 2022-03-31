@@ -48,7 +48,6 @@ gem "reform-rails"
 gem 'bootstrap'
 gem 'formular'
 gem 'jquery-rails'
-gem 'mini_racer'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 
