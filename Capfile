@@ -33,6 +33,7 @@ require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 require "capistrano/rbenv"
 require 'capistrano/puma'
+require 'capistrano/secrets_yml'
 
 # require "capistrano/chruby"
 # require "capistrano/rails/assets"
