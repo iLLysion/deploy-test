@@ -10,7 +10,7 @@ set :repo_url,        'git@github.com:iLLysion/deploy-test.git'
 set :application,     'deploy-test'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
-set :puma_workers,    0
+set :puma_workers,    2
 set :rbenv_type,      :user
 set :rbenv_ruby,      '2.5.1'
 set :rbenv_prefix,    "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
